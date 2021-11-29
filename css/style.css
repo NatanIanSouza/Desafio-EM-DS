@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root {
+    --color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-menu {
+    background: #b30101 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+#li1,
+#li2,
+#li3,
+#nome {
+    color: #ffffff;
+    transition: 0.4s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#li1:hover,
+#li2:hover,
+#li3:hover,
+#nome:hover {
+    color: #000000;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    position: relative;
+    background: #000000;
+    color: white;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 4.5rem;
+    margin: 0 0 10px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.9);
+    transition: font-size 0.4s, color 0.5s, font-family 0.4s;
+}
+
+.hero h2:hover {
+    font-size: 4.8rem;
+    color: black;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.726);
+    line-height: 1.4;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
+    transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -68vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.waves::before {
+    border-radius: 44%;
+    background: linear-gradient(to bottom, #e17055, #fab1a0, #fdcb6e);
+    animation: waves 14s linear infinite;
+}
+
+.waves::after {
+    border-radius: 44%;
+    background: rgba(218, 7, 7, 0.5);
+    animation: waves 30s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+#descricao {
+    width: 15rem;
+    height: 15rem;
+}
