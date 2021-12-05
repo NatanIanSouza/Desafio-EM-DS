@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +34,25 @@ a {
 
 img {
     border-radius: 0.5rem;
+}
+
+#iend {
+    font-size: 2px;
+    color: #ef6603;
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    background: #ffecde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#iend:hover {
+    color: #ffecde;
+    background: #ef6603;
 }
 
 #li1,
@@ -92,7 +116,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
+    height: 218px;
     background-color: var(--color);
     box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
     transition: 500ms;
@@ -102,8 +126,8 @@ img {
 .waves::after {
     content: '';
     position: absolute;
-    width: 300vw;
-    height: 300vw;
+    width: 305vw;
+    height: 305vw;
     top: -68vw;
     left: 50%;
     transform: translate(-50%, -75%);
@@ -130,20 +154,101 @@ img {
     }
 }
 
+.titles {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    transition: color 0.4s, font-size 0.4s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.titles:hover {
+    color: black;
+    font-size: 3.2rem;
+}
+
 #descricao {
     width: 100%;
-    height: 100%;
+    height: 14rem;
+}
+
+#descricao2 {
+    width: 100%;
+    height: 13rem;
+}
+
+#descricao3 {
+    width: 100%;
+    height: 14rem;
+}
+
+#descricao4 {
+    width: 100%;
+    height: 14rem;
+}
+
+#pol1,
+#pol2,
+#pol3 {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.polaroid {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: width 0.4s, padding 0.4s;
+    transition-timing-function: ease;
+}
+
+.polaroid:hover {
+    width: 280px;
+}
+
+.bg-polaroid {
+    padding: 20px;
+}
+
+.modal-content {
+    border-radius: 1rem;
 }
 
 .gradient {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 42vh;
+    width: 100%;
+    background: linear-gradient(90deg, #EB6347, #f09d59, #e4a192, #f09d59, #E8584F);
+    background-size: 200% 200%;
+    animation: colors 7s ease infinite;
+}
+
+.gradient-obrigado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 0%;
+    background: linear-gradient(45deg, #EB6347, #f09d59, #e4a192, #f09d59, #E8584F);
+    background-size: 200% 200%;
+    animation: colors 5s ease infinite;
+}
+
+.bg-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, #e17055, #fab1a0, #fdcb6e);
+    background: linear-gradient(90deg, #ffffff, #d3cfcfb6, #ffffff);
     background-size: 200% 200%;
-    animation: colors 15s ease infinite;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: colors 10s ease infinite;
 }
 
 @keyframes colors {
@@ -156,6 +261,34 @@ img {
     100% {
         background-position: 0% 50%;
     }
+}
+
+p {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+label {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-subt {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #921209;
+    color: white;
+    transition: all 0.2s;
+}
+
+.bg-enviar:hover {
+    background: #e60707;
 }
 
 .bg-footer {

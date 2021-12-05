@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="libs/icons/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="imagex/png" href="imagens/logo-cps.ico">
-    <title>Desenvolvimento de Sistemas</title>
+    <title>Sobre - DS</title>
 </head>
 
 <body>
@@ -33,72 +33,74 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="content">
-            <h2>Etec de Lins</h2>
-            <p>Ensino Médio com Habilitação em Técnico de Desenvolvimento de Sistemas</p>
-        </div>
-        <div class="waves"></div>
-    </section>
+    <div class="jumbotron gradient">
+        <h1 class="titles mt-5">Sobre</h1>
+    </div>
 
     <div class="container-fluid">
-        <div class="row justify-content mt-5 mb-5">
-            <div class="col-12 col-sm-6 col-md-6 mb-5">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao" src="imagens/mac.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Descrição</h2>
-                        <p>É o profissional que analisa e projeta sistemas. Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos
-                            de dados.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 mb-5">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao2" src="imagens/ondetrabalhar.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Onde Trabalhar</h2>
-                        <p>Empresas e departamentos de desenvolvimento de sistemas em organizações governamentais e não governamentais, podendo também atuar como profissional autônomo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 mt-3 mb-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mt-3 mb-4">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao3" src="imagens/coding.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Onde Estudar</h2>
-                        <p><b>-</b> Modalidade presencial
-                            <br><b>-</b> Modalidade EaD
-                            <br><b>-</b> Novotec Integrado - Habilitação Técnica Profissional em período integral
-                            <br><b>-</b> Novotec Integrado - Habilitação Técnica Profissional
-                            <br><b>-</b> Modalidade AMS</p>
-                    </div>
+                    <a href="cps" id="pol1">
+                        <div class="polaroid mb-4">
+                            <img src="imagens/capa-ds.jpg" alt="" style="width:100%;">
+                            <div class="container bg-polaroid">
+                                <p class="text-center" style="font-family: 'Josefin Sans', sans-serif;">Centro Paula Souza</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-6 mt-3 mb-4">
+            <div class="col-12 col-sm-6 col-md-4 mt-3 mb-4">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao4" src="imagens/madeira.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Benefícios</h2>
-                        <p><b>-</b> Ensino Médio Integrado ao Ensino Técnico
-                            <br><b>-</b> Acesso a várias opções de curso
-                            <br><b>-</b> Ingressa rapidamente ao Mercado de Trabalho
-                            <br><b>-</b> Acesso a benefícios da Microsoft
-                            <br><b>-</b> Recursos gratuitos ilimitados</p>
-                    </div>
+                    <a href="etec" id="pol2">
+                        <div class="polaroid mb-4">
+                            <img src="imagens/capa-etec.jpg" alt="" style="width:100%;">
+                            <div class="container bg-polaroid">
+                                <p class="text-center" style="font-family: 'Josefin Sans', sans-serif;">Etec de Lins</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 mt-3 mb-4">
+                <div class="row justify-content-center">
+                    <a href="ds" id="pol3">
+                        <div class="polaroid mb-4">
+                            <img src="imagens/usb.jpg" alt="" style="width:100%;">
+                            <div class="container bg-polaroid">
+                                <p class="text-center" style="font-family: 'Josefin Sans', sans-serif;">Desenvolvimento de Sistemas</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+    <div class="modal fade" id="modal-info" role="dialog" aria-labelledby="information" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Título da Modal</h2> <br><br>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-dark">
+                    <div class="text-center">
+                        <img src="" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates temporibus at deleniti nam dolorem voluptatem perspiciatis nostrum ipsa iusto? Perspiciatis vel deserunt error dolores reiciendis cumque necessitatibus? Modi,
+                        molestias?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="container-fluid bg-footer">
@@ -164,6 +166,7 @@
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

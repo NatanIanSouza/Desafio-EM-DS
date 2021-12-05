@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="libs/icons/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="imagex/png" href="imagens/logo-cps.ico">
-    <title>Desenvolvimento de Sistemas</title>
+    <title>Contato - DS</title>
 </head>
 
 <body>
@@ -33,72 +33,70 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="content">
-            <h2>Etec de Lins</h2>
-            <p>Ensino Médio com Habilitação em Técnico de Desenvolvimento de Sistemas</p>
-        </div>
-        <div class="waves"></div>
-    </section>
+    <div class="jumbotron gradient">
+        <h1 class="titles mt-5">Contato</h1>
+    </div>
 
-    <div class="container-fluid">
-        <div class="row justify-content mt-5 mb-5">
-            <div class="col-12 col-sm-6 col-md-6 mb-5">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao" src="imagens/mac.jpg" alt="">
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row justify-content-center mt-2" style="padding-left: 2rem;">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="row bg-contato mb-4">
+                    <div class="col-12 col-sm-12 col-md-3 mt-2">
+                        <h2 class="bg-subt">Endereço:</h2>
+                        <p>Rua São Pedro, 300 - Lins - SP</p>
+                        <br>
+
+                        <h2 class="bg-subt">E-mail:</h2>
+                        <p>e148.ata@etec.sp.gov.br</p>
+                        <br>
+
+                        <h2 class="bg-subt">Telefone:</h2>
+                        <p>(14) 3523-1217</p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Descrição</h2>
-                        <p>É o profissional que analisa e projeta sistemas. Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos
-                            de dados.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 mb-5">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao2" src="imagens/ondetrabalhar.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Onde Trabalhar</h2>
-                        <p>Empresas e departamentos de desenvolvimento de sistemas em organizações governamentais e não governamentais, podendo também atuar como profissional autônomo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 mt-3 mb-4">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao3" src="imagens/coding.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Onde Estudar</h2>
-                        <p><b>-</b> Modalidade presencial
-                            <br><b>-</b> Modalidade EaD
-                            <br><b>-</b> Novotec Integrado - Habilitação Técnica Profissional em período integral
-                            <br><b>-</b> Novotec Integrado - Habilitação Técnica Profissional
-                            <br><b>-</b> Modalidade AMS</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 mt-3 mb-4">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <img id="descricao4" src="imagens/madeira.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 mt-4">
-                        <h2>Benefícios</h2>
-                        <p><b>-</b> Ensino Médio Integrado ao Ensino Técnico
-                            <br><b>-</b> Acesso a várias opções de curso
-                            <br><b>-</b> Ingressa rapidamente ao Mercado de Trabalho
-                            <br><b>-</b> Acesso a benefícios da Microsoft
-                            <br><b>-</b> Recursos gratuitos ilimitados</p>
+                    <div class="col-12 col-sm-12 col-md-7 mt-3">
+                        <form action="obrigado.html">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-8">
+                                    <div class="form-group">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" class="form-control" id="form-nome" placeholder="Digite seu nome">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="form-group">
+                                        <label for="telefone">Telefone:</label>
+                                        <input type="text" class="form-control" id="telefone" placeholder="Ex: (14) 99655-3882">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-8">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <label for="assunto">Assunto:</label>
+                                    <select class="form-control" id="assunto">
+                                        <option>Pergunta</option>
+                                        <option>Crítica</option>
+                                        <option>Elogio</option>
+                                        <option>Outro...</option>
+                                    </select>
+                                </div>
+                            </div> <br>
+
+
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn bg-enviar mb-2">Enviar</button>
+
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 
     <div class="container-fluid bg-footer">
