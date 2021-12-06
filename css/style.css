@@ -36,25 +36,6 @@ img {
     border-radius: 0.5rem;
 }
 
-#iend {
-    font-size: 2px;
-    color: #ef6603;
-    float: left;
-    width: 3rem;
-    height: 3rem;
-    background: #ffecde;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-}
-
-#iend:hover {
-    color: #ffecde;
-    background: #ef6603;
-}
-
 #li1,
 #li2,
 #li3,
@@ -68,7 +49,7 @@ img {
 #li2:hover,
 #li3:hover,
 #nome:hover {
-    color: #000000;
+    color: #a39d9d;
 }
 
 .content {
@@ -94,12 +75,11 @@ img {
     margin: 0 0 10px;
     line-height: 1;
     color: rgba(255, 255, 255, 0.9);
-    transition: font-size 0.4s, color 0.5s, font-family 0.4s;
+    transition: font-size 0.4s, font-family 0.4s;
 }
 
 .hero h2:hover {
     font-size: 4.8rem;
-    color: black;
 }
 
 .hero p {
@@ -120,6 +100,18 @@ img {
     background-color: var(--color);
     box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
     transition: 500ms;
+}
+
+@media only screen and (min-width: 815px) {
+    .waves {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .waves {
+        height: 218px;
+    }
 }
 
 .waves::before,
@@ -162,7 +154,6 @@ img {
 }
 
 .titles:hover {
-    color: black;
     font-size: 3.2rem;
 }
 
@@ -310,7 +301,7 @@ label {
 #fotlink1:hover,
 #fotlink2:hover,
 #fotlink3:hover {
-    color: rgb(0, 0, 0);
+    color: #a39d9d;
     text-shadow: black;
 }
 
@@ -325,7 +316,7 @@ label {
 #iroda1:hover,
 #iroda2:hover,
 #iroda3:hover {
-    color: black;
+    color: #a39d9d;
 }
 
 #cps {
